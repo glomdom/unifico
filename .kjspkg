@@ -1,6 +1,6 @@
 {
     "author": "glomdom",
-    "description": "Poor man's recipe unifier.",
+    "description": "recipe unifier for poor people",
 
     "versions": [6],
     "modloaders": ["forge"],
