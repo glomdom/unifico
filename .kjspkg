@@ -1,0 +1,9 @@
+{
+    "author": "glomdom",
+    "description": "Poor man's recipe unifier.",
+
+    "versions": [6],
+    "modloaders": ["forge"],
+    "dependencies": [],
+    "incompatibilities": []
+}
