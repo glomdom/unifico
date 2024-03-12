@@ -1,5 +1,7 @@
 onEvent("recipes", (event) => {
-    if (global.unifico != {} || global.unifico != undefined) {
+    if (global.unifico != {} && global.unifico != undefined) {
+        console.log(`unifying ${Object.keys(global.unifico).length} thingamajigs`);
+
         for (let oredic of Object.keys(global.unifico)) {
             event.replaceInput(
                 { input: oredic },      // recipes with this in input
@@ -15,3 +17,9 @@ onEvent("recipes", (event) => {
         };
     }
 });
+
+// other addon support
+
+if (Platform.isLoaded("lootjs")) {
+    console.log("lootjs detected, unifying loot tables");   
+}
