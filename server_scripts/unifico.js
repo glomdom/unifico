@@ -4,15 +4,13 @@ onEvent("recipes", (event) => {
 
         for (let oredic of Object.keys(global.unifico)) {
             event.replaceInput(
-                { input: oredic },      // recipes with this in input
-                oredic,                 // must be replaced with
-                global.unifico[oredic]  // this
+                oredic,                 // recipes with this in input
+                global.unifico[oredic]  // must be replaced with this
             );
 
             event.replaceOutput(
-                { output: oredic },     // recipes with this in output
-                oredic,                 // must be replaced with
-                global.unifico[oredic]  // this
+                oredic,                 // recipes with this in output
+                global.unifico[oredic]  // must be replaced with this
             );
         };
     }
